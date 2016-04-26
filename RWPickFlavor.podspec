@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+This is a test of the private cocoapod spec system, I repeat this is test.
                        DESC
 
   s.homepage         = "https://github.com/charliefulton/RWPickFlavor"
