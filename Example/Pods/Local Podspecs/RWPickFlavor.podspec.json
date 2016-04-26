@@ -1,0 +1,34 @@
+{
+  "name": "RWPickFlavor",
+  "version": "0.1.0",
+  "summary": "A short description of RWPickFlavor.",
+  "description": "",
+  "homepage": "https://github.com/charliefulton/RWPickFlavor",
+  "license": "MIT",
+  "authors": {
+    "Charlie Fulton": "charliefulton@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/charliefulton/RWPickFlavor.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RWPickFlavor/**/*.{swift}",
+  "resource_bundles": {
+    "RWPickFlavor": [
+      "RWPickFlavor/Assets/*.png"
+    ]
+  },
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Alamofire": [
+      "~> 2.0"
+    ],
+    "MBProgressHUD": [
+      "~> 0.9.0"
+    ]
+  },
+  "resources": "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib}"
+}

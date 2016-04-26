@@ -20,11 +20,11 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/RWPickFlavor"
+  s.homepage         = "https://github.com/charliefulton/RWPickFlavor"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Charlie Fulton" => "charliefulton@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/RWPickFlavor.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/charliefulton/RWPickFlavor.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -34,7 +34,14 @@ Pod::Spec.new do |s|
     'RWPickFlavor' => ['RWPickFlavor/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.framework = "UIKit"
+  s.dependency 'Alamofire', '~> 2.0'
+  s.dependency 'MBProgressHUD', '~> 0.9.0'
+ 
+  # 8
+  s.source_files = "RWPickFlavor/**/*.{swift}"
+ 
+  # 9
+  s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib}"
+
 end
