@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "RWPickFlavor"
+  s.name             = "RWPickFlavorCRF"
   s.version          = "0.1.0"
   s.summary          = "A short description of RWPickFlavor."
 
@@ -30,10 +30,9 @@ This is a test of the private cocoapod spec system, I repeat this is test.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RWPickFlavor/Classes/**/*'
-  s.resource_bundles = {
-    'RWPickFlavor' => ['RWPickFlavor/Assets/*.png']
-  }
+  #s.resource_bundles = {
+  #  'RWPickFlavor' => ['RWPickFlavor/Assets/*.png']
+  #}
 
   s.framework = "UIKit"
   s.dependency 'Alamofire', '~> 2.0'
